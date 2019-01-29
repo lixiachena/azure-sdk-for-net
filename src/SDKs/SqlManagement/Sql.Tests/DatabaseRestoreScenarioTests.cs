@@ -480,7 +480,7 @@ namespace Sql.Tests
             }
         }
 
-        [Fact]
+        [Fact(Skip = "Manual test due to long setup time required")]
         public void TestGetRecoverableInstanceDatabase()
         {
             // Use exising CI/database, otherwise 10 hours are needed for waiting new created database is replicated in paired cluster. 
@@ -500,7 +500,7 @@ namespace Sql.Tests
             }
         }
 
-        [Fact]
+        [Fact(Skip = "Manual test due to long setup time required")]
         public void TestRecoverInstanceDatabase()
         {
             using (SqlManagementTestContext context = new SqlManagementTestContext(this))
